@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(181, 190, 119), rgb(203, 90, 107));
+    color: white;
+}
+
+.container {
+    width: 700px;
+    margin: auto;
+
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 70px;
+    padding: 0 20px;
+}
+
+#header h2 {
+    font-size: 3rem;
+}
+
+.user_input {
+    margin-top: 2px;
+    width: 400px;
+    text-align: center;
+
+}
+
+.user_input input {
+    width: 75%;
+    outline: none;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.user_input input:focus {
+    box-shadow: 0 0 5px rgb(211, 102, 102);
+    border: 1px solid rgb(222, 132, 132);
+}
+
+.user_input button {
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    color: black;
+    outline: none;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.user_input button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+#to_do_list {
+    width: 500px;
+    margin: auto;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    padding: 1rem;
+    color: #454545;
+    margin-top: 10px;
+    font-size: 1rem;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+.item:hover {
+    box-shadow: 0 0 20px rgb(215, 113, 113);
+    border: 1px solid rgb(200, 117, 117);
+}
+
+.item i {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+#header {
+    padding: 20px;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+}
